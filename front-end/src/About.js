@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import './Home.css'
+import './About.css'
 /**
  * A React component that represents the Home page of the app.
  * @param {*} param0 an object holding any props passed to this component from its parent component
@@ -29,7 +29,7 @@ const About = props => {
     <>
       <h1>{aboutData.name}</h1>
       <p>{aboutData.description}</p>
-      <p>{aboutData.imageUrl}</p>
+      
       <div><a href={aboutData.imageUrl}><img src={aboutData.imageUrl} alt = "A+ student"></img></a></div>
     </>
   )

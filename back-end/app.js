@@ -83,7 +83,12 @@ app.post('/messages/save', async (req, res) => {
 app.get('/aboutus', (req,res)=>{
   const response = {
     name: "Name: Daniel Sun, ds6760",
-    description: "Daniel is A+ student.",
+    description: `
+I'm currently a senior pursuing a dual degree in Economics and Computer Science. With a passion for both analytical thinking and problem-solving, I’ve found the perfect balance between understanding complex financial systems and building efficient, scalable software solutions.
+
+My goal is to become a software engineer, where I can apply my technical skills to create impactful and innovative technologies. I’m particularly interested in areas like algorithms and data structures, which are not only vital in software engineering but also align with some of my favorite hobbies, like solving Rubik’s cubes and playing Tetris. These games fuel my fascination with strategy and optimization, and I often find myself approaching coding challenges with the same mindset.
+
+In my free time, I enjoy climbing. It’s a great way to stay active, challenge myself physically, and keep my mind sharp. Just like coding, climbing requires focus, adaptability, and perseverance—qualities that I carry with me in everything I do.`,
     imageUrl: `http://localhost:${port}/images/sun_daniel_image.jpg`
   }
   res.json({

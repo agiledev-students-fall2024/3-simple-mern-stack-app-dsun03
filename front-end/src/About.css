@@ -1,0 +1,55 @@
+/* General page styling */
+*{
+    /*border: solid black;*/
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Center the content */
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* This will center all text inside the container */
+}
+
+/* Heading style */
+h1 {
+    color: #007acc;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Paragraph styles */
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center; /* Center paragraph text */
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+/* Image container */
+div img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-top: 40px;
+}
+
+/* Hover effect on image */
+div img:hover {
+    transform: scale(1.05);
+}
