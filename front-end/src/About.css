@@ -1,8 +1,3 @@
-/* General page styling */
-*{
-    /*border: solid black;*/
-}
-
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
@@ -19,7 +14,7 @@ body {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center; /* This will center all text inside the container */
+    text-align: center;
 }
 
 /* Heading style */
@@ -30,12 +25,12 @@ h1 {
 }
 
 /* Paragraph styles */
-p {
+.paragraph-container {
     font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 20px;
-    text-align: center; /* Center paragraph text */
-    max-width: 50%;
+    text-align: center; 
+    max-width: 60%;
     margin: 0 auto;
 }
 

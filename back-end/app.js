@@ -82,13 +82,12 @@ app.post('/messages/save', async (req, res) => {
 
 app.get('/aboutus', (req,res)=>{
   const response = {
-    name: "Name: Daniel Sun, ds6760",
-    description: `
-I'm currently a senior pursuing a dual degree in Economics and Computer Science. With a passion for both analytical thinking and problem-solving, I’ve found the perfect balance between understanding complex financial systems and building efficient, scalable software solutions.
+    name: "Name: Daniel Sun",
+    description: `I'm currently a senior pursuing a dual degree in Economics and Computer Science. With a passion for both analytical thinking and problem-solving, I’ve found the perfect balance between understanding complex financial systems and building efficient, scalable software solutions. \n
 
-My goal is to become a software engineer, where I can apply my technical skills to create impactful and innovative technologies. I’m particularly interested in areas like algorithms and data structures, which are not only vital in software engineering but also align with some of my favorite hobbies, like solving Rubik’s cubes and playing Tetris. These games fuel my fascination with strategy and optimization, and I often find myself approaching coding challenges with the same mindset.
+My goal is to become a software engineer, where I can apply my technical skills to create impactful and innovative technologies. I’m particularly interested in areas like algorithms and data structures, which are not only vital in software engineering but also align with some of my favorite hobbies, like solving Rubik’s cubes and playing Tetris. I've been solving Rubik's cubes ever since I was in elementary school, and now I am the president of the Rubik's Cube Club at NYU. In addition, I've found Tetris to be an enjoyable activity for destressing especially after a long day of school/work. These games fuel my fascination with strategy and optimization, and I often find myself approaching coding challenges with the same mindset. \n
 
-In my free time, I enjoy climbing. It’s a great way to stay active, challenge myself physically, and keep my mind sharp. Just like coding, climbing requires focus, adaptability, and perseverance—qualities that I carry with me in everything I do.`,
+The past summer, I've started to go climbing after working at my internship in the city. To me, it just feels like a real life physical version of leetcode or problem solving. There's always a solution though many are much messier and overcomplicated. It’s a great way to stay active, challenge myself physically, and keep my mind sharp. Just like coding, climbing requires focus, adaptability, and perseverance—qualities.`,
     imageUrl: `http://localhost:${port}/images/sun_daniel_image.jpg`
   }
   res.json({

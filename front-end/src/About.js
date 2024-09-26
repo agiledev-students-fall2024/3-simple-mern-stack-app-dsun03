@@ -9,27 +9,30 @@ import './About.css'
 const About = props => {
   
   const [aboutData, setAboutData] = useState({});
-  const [error, setError] = useState('')
 
   useEffect(()=>{
+    //fetch the info from the backend
     axios
     .get(`${process.env.REACT_APP_SERVER_HOSTNAME}/aboutus`)
+    //get the response data
     .then(response=>{
       setAboutData(response.data.response)
     })
     .catch(err => {
-      const errMsg = JSON.stringify(err, null, 2)
-      setError(errMsg)
+      console.error('Error fetching about data:', err);
     })
   }, [])
   
-  console.log(aboutData)
-
   return (
     <>
       <h1>{aboutData.name}</h1>
-      <p>{aboutData.description}</p>
-      
+      <div 
+        className="paragraph-container"
+        //apply the newline breaks
+        dangerouslySetInnerHTML={{
+            __html: aboutData?.description?.replace(/\n/g, '<br />')
+        }} 
+    />
       <div><a href={aboutData.imageUrl}><img src={aboutData.imageUrl} alt = "A+ student"></img></a></div>
     </>
   )
